@@ -9,14 +9,14 @@ RSpec.describe SchemaDotOrg::DiscussionForumPosting do
       headline: 'Great Post',
       text: 'This is a great post!',
       author: SchemaDotOrg::Person.new(name: 'Alice'),
-      datePublished: Date.new(2020, 1, 1),
+      datePublished: '2020-01-01',
       image: ['https://example.com/image.jpg'],
       url: 'https://example.com/post',
       mainEntityOfPage: 'https://example.com/post',
       comment: [SchemaDotOrg::Comment.new(
         text: 'Great comment!',
         author: SchemaDotOrg::Person.new(name: 'Bob'),
-        datePublished: Date.new(2020, 1, 2),
+        datePublished: '2020-01-01',
         url: 'https://example.com/comment',
         )
       ],

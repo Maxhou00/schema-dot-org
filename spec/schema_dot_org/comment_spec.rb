@@ -8,13 +8,13 @@ RSpec.describe SchemaDotOrg::Comment do
     SchemaDotOrg::Comment.new(
       text: 'This is a great comment!',
       author: SchemaDotOrg::Person.new(name: 'Alice'),
-      datePublished: Date.new(2020, 1, 1),
+      datePublished: '2020-01-01',
       image: ['https://example.com/image.jpg'],
       url: 'https://example.com/post',
       comment: [SchemaDotOrg::Comment.new(
         text: 'Great comment!',
         author: SchemaDotOrg::Person.new(name: 'Bob'),
-        datePublished: Date.new(2020, 1, 2),
+        datePublished: '2020-01-02',
         url: 'https://example.com/comment',
         )
       ],
